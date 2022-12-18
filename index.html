@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link rel="stylesheet" href="" />
+  <title>Weather Dashboard</title>
+</head>
+
+<body>
+  <header class="display-flex justify-content-around text-center">
+    <h1 class>Weather Dashboard</h1>
+  </header>
+
+  <div class="container">
+    <div class="row">
+      <div>
+        <div class="card">
+          <h2 class="card-header">Search a City:</h2>
+          <form id="search" class="card-body">
+            <label class="form-label" for="city-search"> </label>
+            <input name="city" id="city" type="text" autofocus="true" class="form-input" />
+            <button type="submit" class="col-* btn btn-primary">Search</button>
+          </form>
+        </div>
+        <div col>
+          <ul id="list-searches">
+          </ul>
+        </div>
+      </div>
+      <div>
+        <div>
+          <h2>
+            <span id="current-city"></span>
+            (<span id="month"></span>/<span id="day"></span>/<span id="year"></span>)
+            <img id="current-icon">
+          </h2>
+          <ul id="current-data">
+            <li>Temp: <span id="currentTemp"></span>&#176</li>
+            <li>Wind: <span id="currentWind"></span>MPH</li>
+            <li>Humidity: <span id="currentHum"></span>%</li>
+          </ul>
+        </div>
+
+        <div>
+          <h2>5-Day Forecast:</h2>
+          <div class="row forecasts" id="forecast-div">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
